@@ -1,5 +1,27 @@
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+
+        /*
+
+       Person person1 = new Person("can", "urul", 30);
+       Person person2 = new Person("sıla","urul",32);
+
+        System.out.println("Firstname: " + person1.getFirstName());
+        System.out.println("LastName: " + person1.getLastName());
+        System.out.println("Age: " + person2.getAge());
     }
+    */
+        Wall wall = new Wall(5,4);
+
+        System.out.println("area= " + wall.getArea());
+
+        wall.setHeight(-1.5);
+
+        System.out.println("width= " + wall.getWidth());
+
+        System.out.println("height= " + wall.getHeight());
+
+        System.out.println("area= " + wall.getArea());
+}
 }
