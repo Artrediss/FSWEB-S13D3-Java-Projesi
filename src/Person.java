@@ -1,49 +1,36 @@
-public class Person {
+public class Person{
     String firstName;
     String lastName;
     int age;
-    double salary;
-    boolean isMarried;
-    String[] hobbies;
-
+    int height;
+    boolean isAdult;
     public Person(String firstName, String lastName, int age){
-
         this.firstName = firstName;
         this.lastName = lastName;
-        this.age=age;
-
+        this.age = age;
     }
 
-    public Person(String firstName, String lastName, int age, double salary, boolean isMarried, String[] hobbies){
-
-        this(firstName, lastName,age);
-        this.salary = salary <11500 ? 11500 : salary;
-        this.isMarried = isMarried;
-        this.hobbies = hobbies;
-
+    public Person(String firstName, String lastName, int age, int height, boolean isAdult) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.age = age;
+        this.height = height;
+        this.isAdult = isAdult;
     }
 
-    public String getFirstName(){
-        return this.firstName;
-    }
-    public String getLastName(){
-        return this.lastName;
-    }
-    public int getAge(){
-        return this.age;
+
+    public String getFirstName() {
+        return firstName;
     }
 
-    public double salary(){
-        return this.salary;
+    public String getLastName() {
+        return lastName;
     }
-    public String[] getHobbies(){
-        return this.hobbies;
+
+    public int getAge() {
+        return age;
     }
     public boolean isTeen(){
-
-        return this.age >=13 && this.age <19;
-
+        return this.age > 13 && this.age < 19;
     }
-
-
 }
